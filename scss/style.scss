@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+// colors
+@import "./colors.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+
+    img {
+        max-width: 100%;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+        
+
+        main {
+            height: 100%;
+            width: 1100px;
+            display: flex;
+            flex-direction: column;
+
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100px;
+                padding: 100px 0;
+                
+                
+                .menu-desktop  {
+                    
+                    
+                    ul {
+                        display: flex;
+                        gap: 50px;
+
+
+                    li {
+                    a {
+                        text-decoration: none;
+                        color: $very-dark-blue;
+
+                        &:hover {
+                            color: $soft-red;
+                        }
+                    }
+                }
+            }
+            } // menu-desktop
+
+            .mobile-menu {
+                display: none;
+            }
+            }// header
+
+            
+
+            .main-content {
+                display: flex;
+                gap: 30px;
+                padding-bottom: 50px;
+
+                .future {
+
+                    width: 950px;
+                    .content-main {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .title h1 {
+                            font-size: 3.5rem;
+                            color: $very-dark-blue;
+                            width: 320px;
+                            line-height: 50px;
+                            letter-spacing: -1px;
+                        }
+
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: flex-start;
+
+                            p {
+                                color: $very-dark-blue;
+                                line-height: 23px;
+                                width: 350px;
+                                padding-bottom: 20px;
+                                font-weight: 400;
+                            }
+
+                            button {
+                                background-color: $soft-red;
+                                color: $off-white;
+                                letter-spacing: 1px;
+                                text-transform: uppercase;
+                                border: none;
+                                padding: 12px 40px;
+                                font-weight: 700;
+                                cursor: pointer;
+
+
+                                &:hover {
+                                    background-color: $very-dark-blue;
+                                }
+                            }
+                        }
+
+                        // .content
+                    }// .content-main
+                    
+                }// future
+
+                .side-bar {
+                    background-color: $very-dark-blue;
+                    width: 520px;
+                    padding: 25px;
+                    height: 440px;
+
+                    .side-bar-header h2 {
+                        color: $soft-orange;
+                        font-size: 2.5rem;
+                        padding-bottom: 20px;
+                    }
+
+                    section {
+
+                        h3 {
+                            color: $off-white;
+                            font-size: 1.2rem;
+                            letter-spacing: .9px;
+                            margin-top: 20px;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $soft-orange;
+                            }
+                        }
+
+                        p {
+                            color: $grayish-blue;
+                            border-bottom: 1px solid $grayish-blue;
+                            padding-bottom: 20px;
+                            line-height: 23px;
+                            margin-top: 10px;
+                            width: 300px;
+                        }
+                    }
+                } // .side-bar
+            }// main-content
+
+            footer {
+                display: flex;
+                padding-bottom: 100px;
+
+                .retro, .laptops, .gaming {
+                    display: flex;
+
+                    figure img {
+                        height: 100%;
+                        width: 170px;
+                    }
+                    section {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 0px 20px;
+
+                        h6 {
+                            font-size: 2.2rem;
+                            font-weight: 700;
+                            color: $grayish-blue;
+                        }
+
+                        p {
+                            color: $very-dark-blue;
+                            font-weight: 800;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $soft-red;
+                            }
+                        }
+
+                        span {
+                            color: $dark-grayish-blue;
+                            line-height: 23px;
+                            
+                        }
+
+                        .span {
+                            width: 90%;
+                        }
+                    }
+
+                } //.retro, .laptops, .gaming
+
+
+            } // footer
+        }// main
+    }// body
+
+    @media screen and (max-width: 1130px) {
+        body {
+            main {
+                align-items: center;
+                .header {
+                    padding: 0;
+                    width: 90%;
+                    .menu-desktop {
+                        display: none;
+                    }
+                    
+                    .mobile-menu {
+                        display: block;
+
+                       .menu-mobile {
+                        display: block;
+                        
+                        .menu-mobile-list {
+                            background-color: $off-white;
+                            padding: 20px;
+                            display: none;
+                            position: absolute;
+                            top: 50px;
+                            right: 500px;
+                            width: 60%;
+                            height: 100%;
+                            top: 0;
+                            right: 0;
+                            transition: all .5s;
+
+
+                            header {
+                                display: flex;
+                                justify-content: end;
+                                padding-bottom: 100px;
+                                
+
+                                img {
+                                    cursor: pointer;
+                                }
+                            }
+                            li  {
+                            margin-top: 20px;
+                            a {
+                                text-decoration: none;
+                                color: $very-dark-blue;
+                                
+
+                                &:hover {
+                                    color: $soft-red;
+                                }
+                            }
+                        }
+                        } //.menu-mobile-list
+                       } // menu-mobile
+                       .figure .icon-menu {
+                        display: block;
+                       }
+                    } // mobile-menu
+                    
+                } // header
+
+                .main-content {
+                    flex-direction: column;
+                    width: 90%;
+                    
+                    .future {
+                        width: 100%;
+                        .future-img {
+                            width: 100%;
+                            .web3-img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+
+                        .content-main {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            
+
+                            .title {
+                            display: flex;
+                            justify-content: center;
+
+                            h1{
+                                font-size: 4.5rem;
+                                width: 500px;
+                                padding-bottom: 20px;
+                                line-height: 70px;
+                            }
+                        }
+                            .content {
+                                width: 100%;
+                            }
+                        } // .content-main
+                    } // future 
+
+                    .side-bar {
+                        width: 400px;
+                        height: 470px;
+                        padding-bottom: 20px;
+                    }
+                } // .main-content
+
+                footer {
+                    flex-direction: column;
+                    width: 90%;
+                    gap: 50px;
+
+                    section {
+                        height: 130px;
+                    }
+
+                    .retro, .laptops, .gaming {
+                        figure  {
+                            width: 150px;
+                            
+
+                            img {
+                                width: 130px;
+                            }
+                        }
+                    }
+                }
+            } // main
+        } // body
+    } // media
+
+    @media screen and (max-width: 570px) {
+        body {
+            main {
+                
+                .main-content {
+                    
+                    .future {
+                        
+                        
+                        .content-main {
+                           
+                            .title {
+                            
+                            h1{
+                                font-size: 3rem;
+                                width: 350px;
+                                padding-bottom: 20px;
+                                line-height: 45px;
+                                margin-top: 30px;
+                            }
+                        }
+                            .content {
+                                width: 90%;
+                            }
+                        } // .content-main
+                    } // future 
+
+                    .side-bar {
+                        width: 337px;
+                        height: 470px;
+                        padding-bottom: 50px;
+                    }
+                } // .main-content
+
+                footer {
+                    flex-direction: column;
+                    width: 90%;
+                    gap: 30px;
+                    
+                    section {
+                        height: 130px;
+                        width: 350px;
+                        span {
+                            width: 220px;
+                        }
+                    }
+
+                    .retro .retro-content span {
+                        width: 230px;
+                    }
+                    .retro, .laptops, .gaming {
+                        figure  {
+                            width: 110px;
+    
+                            img {
+                                width: 110px;
+                            }
+                        }
+                    }
+                } //footer
+            } // main
+        } // body
+    }
+} // *

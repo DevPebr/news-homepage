@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+}
+
+* img {
+  max-width: 100%;
+}
+
+* body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+* body main {
+  height: 100%;
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body main .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  padding: 100px 0;
+}
+
+* body main .header .menu-desktop ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+* body main .header .menu-desktop ul li a {
+  text-decoration: none;
+  color: #00001a;
+}
+
+* body main .header .menu-desktop ul li a:hover {
+  color: #f15e50;
+}
+
+* body main .header .mobile-menu {
+  display: none;
+}
+
+* body main .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+* body main .main-content .future {
+  width: 950px;
+}
+
+* body main .main-content .future .content-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* body main .main-content .future .content-main .title h1 {
+  font-size: 3.5rem;
+  color: #00001a;
+  width: 320px;
+  line-height: 50px;
+  letter-spacing: -1px;
+}
+
+* body main .main-content .future .content-main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+* body main .main-content .future .content-main .content p {
+  color: #00001a;
+  line-height: 23px;
+  width: 350px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+* body main .main-content .future .content-main .content button {
+  background-color: #f15e50;
+  color: #fffdfa;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+* body main .main-content .future .content-main .content button:hover {
+  background-color: #00001a;
+}
+
+* body main .main-content .side-bar {
+  background-color: #00001a;
+  width: 520px;
+  padding: 25px;
+  height: 440px;
+}
+
+* body main .main-content .side-bar .side-bar-header h2 {
+  color: #e9ab53;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+
+* body main .main-content .side-bar section h3 {
+  color: #fffdfa;
+  font-size: 1.2rem;
+  letter-spacing: .9px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+* body main .main-content .side-bar section h3:hover {
+  color: #e9ab53;
+}
+
+* body main .main-content .side-bar section p {
+  color: #c5c6ce;
+  border-bottom: 1px solid #c5c6ce;
+  padding-bottom: 20px;
+  line-height: 23px;
+  margin-top: 10px;
+  width: 300px;
+}
+
+* body main footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 100px;
+}
+
+* body main footer .retro, * body main footer .laptops, * body main footer .gaming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* body main footer .retro figure img, * body main footer .laptops figure img, * body main footer .gaming figure img {
+  height: 100%;
+  width: 170px;
+}
+
+* body main footer .retro section, * body main footer .laptops section, * body main footer .gaming section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
+}
+
+* body main footer .retro section h6, * body main footer .laptops section h6, * body main footer .gaming section h6 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #c5c6ce;
+}
+
+* body main footer .retro section p, * body main footer .laptops section p, * body main footer .gaming section p {
+  color: #00001a;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+* body main footer .retro section p:hover, * body main footer .laptops section p:hover, * body main footer .gaming section p:hover {
+  color: #f15e50;
+}
+
+* body main footer .retro section span, * body main footer .laptops section span, * body main footer .gaming section span {
+  color: #5d5f79;
+  line-height: 23px;
+}
+
+* body main footer .retro section .span, * body main footer .laptops section .span, * body main footer .gaming section .span {
+  width: 90%;
+}
+
+@media screen and (max-width: 1130px) {
+  * body main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * body main .header {
+    padding: 0;
+    width: 90%;
+  }
+  * body main .header .menu-desktop {
+    display: none;
+  }
+  * body main .header .mobile-menu {
+    display: block;
+  }
+  * body main .header .mobile-menu .menu-mobile {
+    display: block;
+  }
+  * body main .header .mobile-menu .menu-mobile .menu-mobile-list {
+    background-color: #fffdfa;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 500px;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  * body main .header .mobile-menu .menu-mobile .menu-mobile-list header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding-bottom: 100px;
+  }
+  * body main .header .mobile-menu .menu-mobile .menu-mobile-list header img {
+    cursor: pointer;
+  }
+  * body main .header .mobile-menu .menu-mobile .menu-mobile-list li {
+    margin-top: 20px;
+  }
+  * body main .header .mobile-menu .menu-mobile .menu-mobile-list li a {
+    text-decoration: none;
+    color: #00001a;
+  }
+  * body main .header .mobile-menu .menu-mobile .menu-mobile-list li a:hover {
+    color: #f15e50;
+  }
+  * body main .header .mobile-menu .figure .icon-menu {
+    display: block;
+  }
+  * body main .main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  * body main .main-content .future {
+    width: 100%;
+  }
+  * body main .main-content .future .future-img {
+    width: 100%;
+  }
+  * body main .main-content .future .future-img .web3-img {
+    width: 100%;
+    height: auto;
+  }
+  * body main .main-content .future .content-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  * body main .main-content .future .content-main .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  * body main .main-content .future .content-main .title h1 {
+    font-size: 4.5rem;
+    width: 500px;
+    padding-bottom: 20px;
+    line-height: 70px;
+  }
+  * body main .main-content .future .content-main .content {
+    width: 100%;
+  }
+  * body main .main-content .side-bar {
+    width: 400px;
+    height: 470px;
+    padding-bottom: 20px;
+  }
+  * body main footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    gap: 50px;
+  }
+  * body main footer section {
+    height: 130px;
+  }
+  * body main footer .retro figure, * body main footer .laptops figure, * body main footer .gaming figure {
+    width: 150px;
+  }
+  * body main footer .retro figure img, * body main footer .laptops figure img, * body main footer .gaming figure img {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  * body main .main-content .future .content-main .title h1 {
+    font-size: 3rem;
+    width: 350px;
+    padding-bottom: 20px;
+    line-height: 45px;
+    margin-top: 30px;
+  }
+  * body main .main-content .future .content-main .content {
+    width: 90%;
+  }
+  * body main .main-content .side-bar {
+    width: 337px;
+    height: 470px;
+    padding-bottom: 50px;
+  }
+  * body main footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    gap: 30px;
+  }
+  * body main footer section {
+    height: 130px;
+    width: 350px;
+  }
+  * body main footer section span {
+    width: 220px;
+  }
+  * body main footer .retro .retro-content span {
+    width: 230px;
+  }
+  * body main footer .retro figure, * body main footer .laptops figure, * body main footer .gaming figure {
+    width: 110px;
+  }
+  * body main footer .retro figure img, * body main footer .laptops figure img, * body main footer .gaming figure img {
+    width: 110px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
